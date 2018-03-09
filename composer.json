@@ -1,5 +1,11 @@
 {
     "name": "chenjian/composer-test",
     "description": "composer test case",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "files": ["src/class.test.php"],
+        "psr-4": {
+            "composer-test\\": "src/"
+        }
+    }
 }
